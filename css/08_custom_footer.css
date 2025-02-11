@@ -1,0 +1,22 @@
+/* 08_custom_footer.css */
+/* TODO: 전체 박스(페이지) */
+#page {width: 99vw; height: 99vh; margin: 0 auto;}
+/* TODO: 꼬리말(footer) */
+footer {clear: both;height: 6rem;background-color: lightgray;
+    font-style: italic;}
+/* TODO: 주소(#address) */
+#address {margin-left: 2rem;height: 50%;
+    display: flex;align-items: center;}
+/* TODO: 전화번호(#customer) */
+#customer {margin-left: 2rem;height: 50%;
+    display: flex;align-items: center;}
+
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+    /* TODO: 주소(왼쪽), 전화번호(오른쪽) */
+    #address {float: left; height: 100%;}
+    #customer {float: right; height: 100%;}
+}
+/* TODO: pc */
+@media screen and (min-width: 1024px) {
+}

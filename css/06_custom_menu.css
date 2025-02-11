@@ -1,0 +1,44 @@
+/* 06_custom_menu.css */
+/* TODO: 전체박스(페이지) */
+#page {width: 99vw; height: 99vh; margin: 0 auto;}
+/* TODO: 대메뉴(GNB) */
+nav {width: 100%; margin: 0 auto;}
+.brand {text-align: center; padding: 1.5rem;}
+.fab img {width: 2rem;}
+.fac img {width: 2rem;}
+/* TODO: 햄버거메뉴 좌표이동: (15,25) */
+.fab {position: absolute; left: 15px; top:25px}
+/* TODO: 닫기이미지 좌표이동: (320,25) */
+.fac {position: absolute; left: 320px; top:25px}
+/* TODO: 메뉴 */
+.menu li {float: left; width: 50%; border: 1px solid var(--grayscale-20);}
+.menu li a {
+    display: block; 
+    height: 6rem;
+    /* TODO: flex 사용 (가로/세로 중앙) */
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+/* 메뉴 우/좌 바깥여백: 15px */
+.menu {margin: 0 15px 0 15px;}
+/* TODO: 마우스위(hover): 배경색: 파란색, 글자색:하얀색 */
+.menu li a:hover {background-color: var(--blue-light-30);color: var(--white);}
+
+/* TODO: 태블릿 */
+@media screen and (min-width: 768px) {
+    nav {width: 90%;}
+    /* TODO: 햄버거메뉴, 닫기이미지 안보이게 하기 */
+    .fab {display: none;}
+    .fac {display: none;}
+    .brand {float: left;}
+    .menu {float: right;}
+    /* TODO: 외곽선 해제: border: none; */
+    /* TODO: 글자크기만큼 가로적용: width: auto; */
+    .menu li {border: none; width: auto;}
+    .menu li a {padding: 1rem 0.6rem 1rem 0.6rem;}
+}
+/* TODO: pc */
+@media screen and (min-width: 1024px) {
+    nav {width: 60%;}
+}
